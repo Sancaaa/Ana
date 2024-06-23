@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana's Birthday</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="Surprise.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="title.png" type="image">
+</head>
+<body>
+
+    <div id="div1" class="container">
+        <img class="potrait" src="Ana 1.jpg">
+        <p>Are you Ana?</p>
+        <div class="buttoncon">
+            <button id="buttonyes" onclick="handleButtonClick('yes')">Yes</button>
+            <button id="buttonno" onclick="handleButtonClick('no'); playAudio2(1)">No</button>
+        </div>
+    </div>
+
+    <div id="div2" class="hidden">
+        <img class="potrait" src="Ana 2.jpg">
+        <p>Are you sure?</p>
+        <div class="buttoncon">
+            <button id="buttonyes" onclick="handleButtonClick('yes')">Yes</button>
+            <button id="buttonno" onclick="handleButtonClick('no'); playAudio3(0)">No</button>
+        </div>
+    </div>
+
+    <div id="div3" class="hidden">
+        <img class="potrait" src="Ana 3.jpg">
+        <p>Really, really sure?</p>
+        <div class="buttoncon">
+            <button id="buttonyes" onclick="handleButtonClick('yes')">Yes</button>
+            <button id="buttonno" onclick="handleButtonClick('no'); playAudio4(0)">No</button>
+        </div>
+    </div>
+
+    <div id="div4" class="hidden">
+        <img class="potrait" src="Ana 4.jpg">
+        <p>Ah, ok.</p>
+        <div class="buttoncon">
+            <button id="buttonrestart" onclick="handleButtonClick('restart'); playAudio1(0)">Restart</button>
+        </div>
+    </div>
+
+    <div id="div5" class="hidden">
+        <img class="potrait" src="Ana 5.jpg">
+        <p>YIPEEEE, ANA!</p>
+        <div class="buttoncon">
+            <button id="buttoncelebrate" onclick="playAudioAndAnimate()">HBD ANA >///< </button>
+            <button id="acikiwir" onclick="playAudioAndAnimate()">HBD ANA >///< </button>
+        </div>
+        <img id="cat" src="HBD.jpg">
+        <div class="ballooncon" id="animatedDiv">
+            <img class="baloon" src="Baloon.png" alt="Flying Image">
+            <img class="baloon" src="Baloon.png" alt="Flying Image">
+            <img class="baloon" src="Baloon.png" alt="Flying Image">
+            <img class="baloon" src="Baloon.png" alt="Flying Image">
+            <img class="baloon" src="Baloon.png" alt="Flying Image">
+            <img class="baloon" src="Baloon.png" alt="Flying Image">
+        
+        </div>
+    </div>
+    <audio id="soundload" src="cat1.mp3" preload="auto"></audio>
+    <audio id="sound1" src="cat1.mp3" preload="auto"></audio>
+    <audio id="sound2" src="cat2.mp3" preload="auto"></audio>
+    <audio id="sound3" src="cat3.mp3" preload="auto"></audio>
+    <audio id="sound4" src="cat4.mp3" preload="auto"></audio>
+    <audio id="sound5" src="Yippe.mp3" preload="auto"></audio>
+
+    <script src="Surprise.js"></script>
+</body>
+</html>
